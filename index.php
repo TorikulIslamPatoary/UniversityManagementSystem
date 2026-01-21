@@ -16,10 +16,13 @@ $userLoggedIn = isset($_SESSION['user']);
 <!-- ===== HEADER ===== -->
 <header>
     <h1>University Management System</h1>
-
+ 
     <nav>
-        <a href="index.php">Home</a>
-
+        <a href="index.php" class=active>Home</a>
+        <a href="students.html">Students</a>
+        <a href="teachers.html">Teachers</a>
+        <a href="courses.html">Courses</a>
+        <a href="results.html">Results</a>
         <?php if ($userLoggedIn): ?>
             <a href="dashboard.php">Dashboard</a>
             <a href="auth/logout.php">Logout</a>
